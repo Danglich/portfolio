@@ -1,6 +1,7 @@
 {
-    "name": "tiktok",
+    "name": "my-portfolio",
     "version": "0.1.0",
+    "homepage": ".",
     "dependencies": {
         "@emotion/react": "^11.10.5",
         "@emotion/styled": "^11.10.5",
