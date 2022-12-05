@@ -37,6 +37,26 @@ module.exports = {
                     '50%': { opacity: '0' },
                     '100%': { transform: 'translateX(0);', opacity: '1' },
                 },
+                blinkCursor: {
+                    '0%,75%': {
+                        opacity: '1',
+                        animationTimingFunction: 'steps(3)',
+                    },
+                    '76%,100%': {
+                        opacity: '0',
+                        animationTimingFunction: 'steps(3)',
+                    },
+                },
+                typing: {
+                    '0%,90%,100%': {
+                        width: '0',
+                        animationTimingFunction: 'steps(4)',
+                    },
+                    '30%,60%': {
+                        width: '100px',
+                        animationTimingFunction: 'steps(4)',
+                    },
+                },
             },
             animation: {
                 fadeUp: 'fadeUp 0.5s ease-in-out',

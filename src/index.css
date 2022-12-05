@@ -10,6 +10,10 @@
     background: #ffb400;
 }
 
+html.dark .btn-active {
+    background: #72b626;
+}
+
 ::-webkit-scrollbar-track {
     background: transparent;
 }

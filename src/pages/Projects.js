@@ -5,20 +5,20 @@ import { projects } from '../data';
 function Project() {
     return (
         <>
-            <div className="bg-[#111] min-h-[100vh]">
-                <h1 className="relative  animate-[fadeUp_0.7s_linear]  tracking-[16px] font-[900] text-[116px] max-md:text-[64px] text-[#232323] text-center py-[40px]">
+            <div className="bg-[#111] dark:bg-white min-h-[100vh]">
+                <h1 className="relative  animate-[fadeUp_0.7s_linear]  tracking-[16px] font-[900] text-[116px] max-md:text-[64px] max-sm:tracking-[5px]  max-sm:text-[58px] text-[#232323] dark:text-[#1e253012] text-center py-[40px]">
                     WORKS
                     <div className="absolute w-full flex justify-center top-[50%] translate-y-[-50%]">
-                        <span className=" tracking-[2px] font-[800] text-white text-[56px]  max-md:text-[32px]">
+                        <span className=" tracking-[2px] font-[800] text-white dark:text-[#555] text-[56px]  max-md:text-[30px]">
                             MY
                         </span>
-                        <span className="font-[800]  max-md:text-[32px]  tracking-[2px] text-[#ffb400] text-[56px] ml-[16px] inline-block">
+                        <span className="font-[800]  max-md:text-[30px]  tracking-[2px] text-[#ffb400] dark:text-[#72b626] text-[56px] ml-[16px] inline-block">
                             PORTFOLIO
                         </span>
                     </div>
                 </h1>
                 <div className="flex justify-center pb-[40px]  animate-[fadeUp_0.7s_linear] ">
-                    <div className="mx-auto cursor-pointer inline-block text-white px-[16px] py-[4px] rounded-[5px] bg-[#ffb400]">
+                    <div className="mx-auto cursor-pointer inline-block text-white dark:text-[#555] px-[16px] py-[4px] rounded-[5px] bg-[#ffb400] dark:bg-[#72b626]">
                         ALL
                     </div>
                 </div>

@@ -150,22 +150,22 @@ function Contact() {
 
     return (
         <>
-            <div className="bg-[#111] min-h-[100vh]">
-                <h1 className="relative  animate-[fadeUp_0.7s_linear]  tracking-[16px] font-[900] text-[116px] max-md:text-[64px] text-[#232323] text-center py-[40px]">
+            <div className="bg-[#111] dark:bg-white min-h-[100vh]">
+                <h1 className="relative  animate-[fadeUp_0.7s_linear]  tracking-[16px] font-[900] text-[116px] max-md:text-[64px]  max-sm:tracking-[5px]  max-sm:text-[58px] text-[#232323] dark:text-[#1e253012] text-center py-[40px]">
                     CONTACT
                     <div className="absolute w-full flex justify-center top-[50%] translate-y-[-50%]">
-                        <span className=" tracking-[2px] font-[800] text-white text-[56px]  max-md:text-[32px]">
+                        <span className=" tracking-[2px] font-[800] text-white dark:text-[#555] text-[56px]  max-md:text-[30px]">
                             GET IN
                         </span>
-                        <span className="font-[800]  max-md:text-[32px]  tracking-[2px] text-[#ffb400] text-[56px] ml-[16px] inline-block">
+                        <span className="font-[800]  max-md:text-[30px]  tracking-[2px] text-[#ffb400] dark:text-[#72b626] text-[56px] ml-[16px] inline-block">
                             TOUCH
                         </span>
                     </div>
                 </h1>
                 <div className="flex justify-center  animate-[fadeUp_0.7s_linear] ">
                     <div className="w-[1200px] flex gap-[24px] max-lg:mx-[20px] max-md:mb-[14px] max-lg:block  max-md:mx-[14px] mb-[28px]">
-                        <div className="flex-1 text-white pr-[24px] max-lg:mb-[24px]">
-                            <h1 className="font-[800] text-[27px] text-white mb-[12px]">
+                        <div className="flex-1 text-white dark:text-[#555] pr-[24px] max-lg:mb-[24px]">
+                            <h1 className="font-[800] text-[27px] text-white dark:text-[#555] mb-[12px]">
                                 DON'T BE SHY !
                             </h1>
                             <p>
@@ -175,7 +175,7 @@ function Contact() {
                             </p>
                             <ul>
                                 <li className="flex py-[8px] pt-[20px]">
-                                    <LocationOnIcon className="text-[#ffb400] mr-[10px] w-[40px!important] h-[40px!important]" />
+                                    <LocationOnIcon className="text-[#ffb400] dark:text-[#72b626] mr-[10px] w-[40px!important] h-[40px!important]" />
                                     <div>
                                         <p className="text-[#a7a5a5] font-[500]">
                                             ADDRESS
@@ -184,7 +184,7 @@ function Contact() {
                                     </div>
                                 </li>
                                 <li className="flex py-[8px]">
-                                    <DraftsIcon className="text-[#ffb400] mr-[10px] w-[40px!important] h-[40px!important]" />
+                                    <DraftsIcon className="text-[#ffb400] dark:text-[#72b626] mr-[10px] w-[40px!important] h-[40px!important]" />
                                     <div>
                                         <p className="text-[#a7a5a5] font-[500]">
                                             EMAIL
@@ -193,7 +193,7 @@ function Contact() {
                                     </div>
                                 </li>
                                 <li className="flex py-[8px]">
-                                    <SettingsPhoneIcon className="text-[#ffb400] mr-[10px] w-[40px!important] h-[40px!important]" />
+                                    <SettingsPhoneIcon className="text-[#ffb400] dark:text-[#72b626] mr-[10px] w-[40px!important] h-[40px!important]" />
                                     <div>
                                         <p className="text-[#a7a5a5] font-[500]">
                                             PHONE
@@ -207,7 +207,7 @@ function Contact() {
                             <div className="flex gap-[28px] max-md:block">
                                 <div className="flex-1 max-md:mb-[30px]">
                                     <input
-                                        className="h-[50px] text-white w-full rounded-[30px] bg-[#2b2a2a] px-[24px] outline-0  transition-all duration-[300ms] focus:border-[#ffb400] border-[1px] border-[#2b2a2a]  caret-[white] "
+                                        className="h-[50px] text-white dark:text-[#555] w-full rounded-[30px] bg-[#2b2a2a]  dark:bg-[#eee]  px-[24px] outline-0  transition-all duration-[300ms] focus:border-[#ffb400] dark:border-[#72b626] border-[1px] border-[#2b2a2a] dark:bg-[#eee]  dark:bg-[#eee]   caret-[white] dark:caret-black "
                                         placeholder="YOUR NAME"
                                         onChange={handleChangeInput}
                                         value={formValues.name || ''}
@@ -221,7 +221,7 @@ function Contact() {
                                 </div>
                                 <div className="flex-1">
                                     <input
-                                        className="h-[50px] text-white w-full rounded-[30px] bg-[#2b2a2a] px-[24px] outline-0  transition-all duration-[300ms] focus:border-[#ffb400] border-[1px] border-[#2b2a2a]  caret-[white]"
+                                        className="h-[50px] text-white dark:text-[#555] w-full rounded-[30px] bg-[#2b2a2a]  dark:bg-[#eee]  px-[24px] outline-0  transition-all duration-[300ms] focus:border-[#ffb400] dark:border-[#72b626] border-[1px] border-[#2b2a2a]  dark:bg-[#eee]   caret-[white] dark:caret-black"
                                         placeholder="YOUR EMAIL"
                                         onChange={handleChangeInput}
                                         value={formValues.email || ''}
@@ -235,7 +235,7 @@ function Contact() {
                                 </div>
                             </div>
                             <input
-                                className="h-[50px] text-white w-full mt-[30px] rounded-[30px] bg-[#2b2a2a] px-[24px] outline-0  transition-all duration-[300ms] focus:border-[#ffb400] border-[1px] border-[#2b2a2a]  caret-[white] "
+                                className="h-[50px] text-white dark:text-[#555] w-full mt-[30px] rounded-[30px] bg-[#2b2a2a]  dark:bg-[#eee]  px-[24px] outline-0  transition-all duration-[300ms] focus:border-[#ffb400] dark:border-[#72b626] border-[1px] border-[#2b2a2a]  dark:bg-[#eee]   caret-[white] dark:caret-black "
                                 placeholder="YOUR SUBJECT"
                                 onChange={handleChangeInput}
                                 value={formValues.subject || ''}
@@ -247,7 +247,7 @@ function Contact() {
                                 </span>
                             )}
                             <textarea
-                                className="h-[200px] text-white py-[16px] resize-none w-full mt-[30px] rounded-[30px] bg-[#2b2a2a] px-[24px] outline-0  transition-all duration-[300ms] focus:border-[#ffb400] border-[1px] border-[#2b2a2a]  caret-[white] "
+                                className="h-[200px] text-white dark:text-[#555] py-[16px] resize-none w-full mt-[30px] rounded-[30px] bg-[#2b2a2a]  dark:bg-[#eee]  px-[24px] outline-0  transition-all duration-[300ms] focus:border-[#ffb400] dark:border-[#72b626] border-[1px] border-[#2b2a2a]  dark:bg-[#eee]   caret-[white] dark:caret-black "
                                 placeholder="YOUR MESSAGE"
                                 onChange={handleChangeInput}
                                 value={formValues.message || ''}

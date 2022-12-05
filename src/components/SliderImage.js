@@ -13,7 +13,7 @@ import { FreeMode, Navigation, Thumbs } from 'swiper';
 function SlideImage({ project }) {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
     return (
-        <div className="h-[430px] mt-[20px]">
+        <div className="h-[430px] max-sm:h-[328px] mt-[20px]">
             <Swiper
                 style={{
                     '--swiper-navigation-color': '#fff',

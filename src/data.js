@@ -1,3 +1,14 @@
+import html from './images/html.png';
+import css from './images/css.png';
+import sass from './images/sass.png';
+import js from './images/js.png';
+import responsive from './images/responsive.png';
+import react from './images/react.png';
+import redux from './images/redux.png';
+import git from './images/git.png';
+import axios from './images/axios.png';
+import tailwind from './images/tailwind.png';
+
 export const projects = [
     {
         name: 'MIKIYA KOBAYASHI',
@@ -101,4 +112,17 @@ export const projects = [
             'https://firebasestorage.googleapis.com/v0/b/webtra-20bcb.appspot.com/o/images%2Fpf-anh7.jpg?alt=media&token=c06f6643-3e5e-4d11-a0a1-5f9d21954cf9',
         ],
     },
+];
+
+export const skills = [
+    { image: html, name: 'html' },
+    { image: css, name: 'css' },
+    { image: sass, name: 'sass' },
+    { image: js, name: 'javascript' },
+    { image: responsive, name: 'responsive web design' },
+    { image: react, name: 'reacts' },
+    { image: redux, name: 'redux' },
+    { image: git, name: 'git' },
+    { image: axios, name: 'axios' },
+    { image: tailwind, name: 'tailwind' },
 ];
