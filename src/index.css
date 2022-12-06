@@ -10,6 +10,11 @@
     background: #ffb400;
 }
 
+html {
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+}
+
 html.dark .btn-active {
     background: #72b626;
 }

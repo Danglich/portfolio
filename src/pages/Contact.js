@@ -4,13 +4,19 @@ import DraftsIcon from '@mui/icons-material/Drafts';
 import SettingsPhoneIcon from '@mui/icons-material/SettingsPhone';
 import Button from '../components/Button';
 import TelegramIcon from '@mui/icons-material/Telegram';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { checkEmpty } from '../utils';
 import { useCallback } from 'react';
 import ModalSuccess from '../components/ModalSuccess';
+import axios from 'axios';
+import { apiUrl } from '../constants';
 
 function Contact() {
     const [isShowSuccess, setIsShowSuccess] = useState(false);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const handleToggleShowSuccess = useCallback(() => {
         setIsShowSuccess(!isShowSuccess);
@@ -82,7 +88,7 @@ function Contact() {
         }
     };
 
-    const handleSubmit = () => {
+    const handleSubmit = async () => {
         let errorsSave = {};
         setIsSubmit(true);
         if (formValues.name) {
@@ -143,6 +149,7 @@ function Contact() {
 
         // Thành công
         if (checkEmpty(errorsSave)) {
+            await axios.post(`${apiUrl}/message/create`, formValues);
             setFormValues({ name: '', email: '', subject: '', message: '' });
             handleToggleShowSuccess();
         }

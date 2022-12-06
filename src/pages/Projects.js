@@ -1,8 +1,13 @@
+import { useEffect } from 'react';
 import Curtain from '../components/Curtain';
 import ProjectItem from '../components/ProjectItem';
 import { projects } from '../data';
 
 function Project() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
             <div className="bg-[#111] dark:bg-white min-h-[100vh]">

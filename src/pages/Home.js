@@ -1,8 +1,14 @@
 import Button from '../components/Button';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Curtain from '../components/Curtain';
+import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function Home() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
             <div className="h-[100vh] w-[100vw] bg-[#111] dark:bg-white  overflow-hidden relative max-lg:overflow-auto max-lg:h-[auto]">
@@ -42,15 +48,19 @@ function Home() {
                             mình không bỏ cuộc.
                         </p>
                         <div className="mt-[28px] max-lg:text-center max-sm:hidden mb-[40px]">
-                            <Button
-                                Icon={ArrowForwardIcon}
-                                title={'portfolio'}
-                            />
-                            <Button
-                                className="ml-[40px]"
-                                Icon={ArrowForwardIcon}
-                                title={'about'}
-                            />
+                            <Link to="/portfolio">
+                                <Button
+                                    Icon={ArrowForwardIcon}
+                                    title={'portfolio'}
+                                />
+                            </Link>
+                            <Link to="/about">
+                                <Button
+                                    className="ml-[40px]"
+                                    Icon={ArrowForwardIcon}
+                                    title={'about'}
+                                />
+                            </Link>
                         </div>
                     </div>
                 </div>

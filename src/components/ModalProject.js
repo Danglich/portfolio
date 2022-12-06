@@ -5,7 +5,7 @@ import CloseIcon from '@mui/icons-material/Close';
 function ModalProject({ isShowing, toggle, project }) {
     return isShowing
         ? ReactDOM.createPortal(
-              <div className="fixed top-0 left-0 right-0 z-[1000]  max-xl:px-[16px] h-[100vh] overflow-auto ">
+              <div className="fixed top-0 left-0 right-0 z-[1001]  max-xl:px-[16px] h-[100vh] overflow-auto ">
                   <div
                       onClick={toggle}
                       className="absolute animate-[lighting_0.4s_ease] w-full h-full top-0 left-0 bg-[rgba(0,0,0,0.4)]"

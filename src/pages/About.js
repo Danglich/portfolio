@@ -5,8 +5,13 @@ import AddIcon from '@mui/icons-material/Add';
 import { skills } from '../data';
 import SkillItem from '../components/SkillItem';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
+import { useEffect } from 'react';
 
 function About() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
             <div className="bg-[#111] dark:bg-white min-h-[100vh]">
