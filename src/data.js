@@ -8,6 +8,7 @@ import redux from './images/redux.png';
 import git from './images/git.png';
 import axios from './images/axios.png';
 import tailwind from './images/tailwind.png';
+import rq from './images/rq.png';
 
 export const projects = [
     {
@@ -118,6 +119,7 @@ export const skills = [
     { image: js, name: 'javascript' },
     { image: responsive, name: 'responsive web design' },
     { image: react, name: 'reacts' },
+    { image: rq, name: 'react-query' },
     { image: redux, name: 'redux' },
     { image: git, name: 'git' },
     { image: axios, name: 'axios' },
