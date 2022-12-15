@@ -67,7 +67,7 @@ export const projects = [
         name: 'Hải Trà Tân Cương',
         createdAt: '20-10-2022',
         desc: 'Đây là một trang web bán trà, tin tức về trà. Bào gồm các tính năng chính: Đặt hàng, mua hàng, xem tin tức trà, xem mô tả sản phẩm, đánh giá sản phẩm.',
-        fontend: 'React , Tailwind , Responsive',
+        fontend: 'React , Tailwind , Responsive, React-query',
         backend: 'NodeJs , mongodb , Express',
         link: 'https://web-tra-danglich.netlify.app',
         images: [
